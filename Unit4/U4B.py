@@ -2,12 +2,12 @@ import math
 
 class U4B:
     
-    @staticmethod
+    @staticmethod # helper method to run the equation per each y input
     def equation(x:float): # x:float ensures that the input is treated as float (even though input explicitly converts to float)
         return x * math.exp(-x) + math.sqrt((1 - math.exp(-x)))
 
     @staticmethod
-    def y(x_start:float, x_end:float, div_num:int):
+    def y(x_start:float, x_end:float, div_num:int): # iterates points per step
         step = (x_end - x_start) / div_num
         for i in range(div_num + 1):
             x = x_start + i * step

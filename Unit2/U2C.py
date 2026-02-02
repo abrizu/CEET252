@@ -1,9 +1,9 @@
 def greet():
     print("Hello! My First Python Program")
 
-def new_ln(input_str:str):
+def new_ln(input_str:str): # type hinting: expects a str as input
     for char in input_str:
-        print(char + "\n", end="")
+        print(char + "\n", end="") # ends print stmt inline. good for concatenation
 
 def main():
     greet()

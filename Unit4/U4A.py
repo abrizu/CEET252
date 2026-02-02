@@ -4,7 +4,7 @@ class U4A:
 
     # since these are utility functions, we can use static methods to clean it up
 
-    @staticmethod
+    @staticmethod # decorator to independently operate as a utility function; does not require data from the class itself
     def equation_1(x):
         return (x - 5/2) ** 6 - (17/4)
     

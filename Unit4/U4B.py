@@ -1,4 +1,5 @@
 import math
+import typing
 
 class U4B:
 
@@ -7,9 +8,10 @@ class U4B:
         return x * math.exp(-x) + math.sqrt((1 - math.exp(-x)))
     
     @staticmethod
+    @typing.overload
     def equation(x_start:float, x_end:float, div_num:float):
-        for i in range(x_start, x_end, div_num):
-            return x * math.exp(-x) + math.sqrt((1 - math.exp(-x)))
+        for i in range(int(x_start), int(x_end), int(div_num)):
+            return i * math.exp(-i) + math.sqrt((1 - math.exp(-i)))
 
 def main():
 
@@ -17,7 +19,7 @@ def main():
     x_end = float(input("x_end: "))
     div_num = float(input("div_num: "))
 
-    res7 = U4B.equation(x_start, x_start, x_end, div_num)
+    res7 = U4B.equation(x_start, x_end, div_num)
 
     print("\n=== Equation 7 Result ===")
     print(f"EQ7: {res7:.4f}")

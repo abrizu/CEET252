@@ -3,7 +3,7 @@ import math
 class U4C:
     
     @staticmethod
-    def square(s:float = 0):
+    def square(s:float = 0): # = 0; typehints float, otherwise default to 0
         return s**2
 
     @staticmethod

@@ -8,7 +8,7 @@ class U5E:
         return y
 
 def main():
-    for x in [5, 6.5, 7, 8.9]: # hard coded x values
+    for x in [5, 6, 7, 8.9]: # hard coded x values
         print(f"at x = {x:.4f}, y = {U5E.eqn(x):.4f}")
 
 if __name__ == "__main__":

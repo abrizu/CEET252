@@ -17,5 +17,7 @@ class UnitConversion:
 val = UnitConversion(50)
 print(format(val.f_c(), '.3f'))
 print(format(val.c_f(), '.3f'))
+
+# using kg value 0.453592
 print(format(val.lbs_kg(), '.3f'))
 print(format(val.kg_lbs(), '.3f'))
